@@ -22,7 +22,6 @@ builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 
-// app.MapGet("/platforms", () => "Windows,Mac,Linux,Unix");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

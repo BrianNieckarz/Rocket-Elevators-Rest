@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 using RocketElevatorREST.Models;
 
 namespace RocketElevatorREST.Controllers
@@ -26,6 +27,14 @@ namespace RocketElevatorREST.Controllers
         public async Task<ActionResult<IEnumerable<Building>>> GetBuildings()
         {
             return await _context.Buildings.ToListAsync();
+        }
+        
+        [HttpGet("intervention")]
+        public async Task<ActionResult<IEnumerable<Building>>>  GetBuildingsWithIntervention(){
+            var building = await _context.Buildings
+                .Where(b => b.Batteries.Any(bt => bt.Status == "intervention" || bt.Columns.Any(col => col.Status == "intervention" || col.Elevators.Any(elev => elev.Status == "intervention"))))
+                .ToListAsync();
+            return building;
         }
 
         // GET: api/Building/5

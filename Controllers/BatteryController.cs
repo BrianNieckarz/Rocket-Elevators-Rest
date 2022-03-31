@@ -104,5 +104,6 @@ namespace RocketElevatorREST.Controllers
         {
             return _context.Batteries.Any(e => e.Id == id);
         }
+
     }
 }

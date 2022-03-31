@@ -23,10 +23,19 @@ namespace RocketElevatorREST.Controllers
 
         // GET: api/Lead
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Lead>>> GetLeads()
-        {
+        public async Task<ActionResult<IEnumerable<Lead>>> GetLeads(){
             return await _context.Leads.ToListAsync();
         }
+
+        // GET: api/lead/pending
+        [HttpGet("pending")]
+        public async Task<ActionResult<IEnumerable<Lead>>> GetPendingLeads(){
+            var lead = await _context.Leads
+                        .Where(l => l.DateOfContactRequest == null && (l.CreatedAt >= DateTime.Now.AddDays(-30) && l.CreatedAt <= DateTime.Now) && !_context.Customers.Any(c => c.EmailOfTheCompanyContact == l.Email))
+                        .ToListAsync();
+            return lead;
+        }
+
 
         // GET: api/Lead/5
         [HttpGet("{id}")]

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RocketElevatorREST.Models
 {
@@ -20,6 +21,7 @@ namespace RocketElevatorREST.Models
         public DateTime UpdatedAt { get; set; }
         public string? Typing { get; set; }
 
+        [ForeignKey("BatteryId")]
         public virtual Battery? Battery { get; set; }
         public virtual ICollection<Elevator> Elevators { get; set; }
     }

@@ -23,9 +23,24 @@ namespace RocketElevatorREST.Controllers
 
         // GET: api/Elevator
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Elevator>>> GetElevators()
+        public async Task<ActionResult<IEnumerable<ElevatorDto>>> GetElevators()
         {
-            return await _context.Elevators.ToListAsync();
+            // var elevators = await _context.Elevators.ToListAsync();
+            var elevators = await _context.Elevators
+                            .Select(elevator => ElevatorToDTO(elevator))
+                            .ToListAsync();
+            return elevators;
+
+        }
+
+        // GET: api/elevator/invalid
+        [HttpGet("invalid")]
+        public async Task<ActionResult<IEnumerable<InvalidElevatorDto>>> GetInvalid(){
+            var elevators = await _context.Elevators
+                            .Where(elevator => elevator.Status != "valid")
+                            .Select(elevator => InvalidElevatorDto(elevator))
+                            .ToListAsync();
+            return elevators;
         }
 
         // GET: api/Elevator/5
@@ -73,8 +88,6 @@ namespace RocketElevatorREST.Controllers
             return NoContent();
         }
 
-        // POST: api/Elevator
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Elevator>> PostElevator(Elevator elevator)
         {
@@ -104,5 +117,20 @@ namespace RocketElevatorREST.Controllers
         {
             return _context.Elevators.Any(e => e.Id == id);
         }
+    
+        private static ElevatorDto ElevatorToDTO(Elevator elevator) => new ElevatorDto{
+            Id = elevator.Id,
+            SerialNumber = elevator.SerialNumber,
+            Status = elevator.Status
+        };
+        
+        private static InvalidElevatorDto InvalidElevatorDto(Elevator elevator) => new InvalidElevatorDto{
+            Id = elevator.Id,
+            ColumnId = elevator.ColumnId,
+            SerialNumber = elevator.SerialNumber,
+            Model = elevator.Model,
+            Status = elevator.Status  
+        };
+
     }
 }

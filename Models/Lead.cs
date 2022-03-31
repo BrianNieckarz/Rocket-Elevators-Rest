@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace RocketElevatorREST.Models
 {
@@ -14,9 +15,15 @@ namespace RocketElevatorREST.Models
         public string? ProjectDescription { get; set; }
         public string? DepartmentInChargeOfElevators { get; set; }
         public string? Message { get; set; }
+
+        [JsonIgnore]
         public byte[]? AttachedFileStoredAsBinary { get; set; }
+        
+        [JsonIgnore]
         public DateTime CreatedAt { get; set; }
+        
+        [JsonIgnore]
         public DateTime UpdatedAt { get; set; }
-        public DateOnly? DateOfContactRequest { get; set; }
+        public DateTime? DateOfContactRequest { get; set; }
     }
 }

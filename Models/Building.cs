@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace RocketElevatorREST.Models
 {
@@ -19,13 +21,33 @@ namespace RocketElevatorREST.Models
         public string? FullNameOfTheTechnicalContactForTheBuilding { get; set; }
         public string? TechnicalContactEmailForTheBuilding { get; set; }
         public string? TechnicalContactPhoneForTheBuilding { get; set; }
+        [JsonIgnore]
         public DateTime CreatedAt { get; set; }
+        [JsonIgnore]
         public DateTime UpdatedAt { get; set; }
+        [JsonIgnore]
         public long? AddressId { get; set; }
+        [JsonIgnore]
 
+        [ForeignKey("AddressId")]
         public virtual Address? Address { get; set; }
+        [JsonIgnore]
+
+        [ForeignKey("CustomerId")]
         public virtual Customer? Customer { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Battery> Batteries { get; set; }
+        [JsonIgnore]
         public virtual ICollection<BuildingDetail> BuildingDetails { get; set; }
     }
+
+    public class BuildingDTO{
+        public BuildingDTO()
+        {
+            Batteries = new HashSet<BatteryDTO>();
+        }
+        public long Id { get; set; }
+        public virtual ICollection<BatteryDTO> Batteries { get; set; }
+    }
+
 }

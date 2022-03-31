@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace RocketElevatorREST.Models
 {
-    [System.ComponentModel.DataAnnotations.Schema.NotMapped] 
     public partial class Battery
     {
         public Battery()
@@ -26,6 +25,15 @@ namespace RocketElevatorREST.Models
 
         public virtual Building? Building { get; set; }
         public virtual Employee? Employee { get; set; }
+        public virtual ICollection<Column> Columns { get; set; }
+    }
+
+    public class BatteryDTO{
+        public BatteryDTO(){
+            Columns = new HashSet<Column>();
+        }
+        public long Id { get; set; }
+        public string? Status { get; set; } 
         public virtual ICollection<Column> Columns { get; set; }
     }
 }
