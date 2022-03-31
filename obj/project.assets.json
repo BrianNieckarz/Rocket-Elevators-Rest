@@ -9713,11 +9713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj",
+      "projectUniqueName": "/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj",
       "projectName": "RocketElevatorREST",
-      "projectPath": "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj",
+      "projectPath": "/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj",
       "packagesPath": "/Users/Ironlithium/.nuget/packages/",
-      "outputPath": "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/obj/",
+      "outputPath": "/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Ironlithium/.nuget/NuGet/NuGet.Config"

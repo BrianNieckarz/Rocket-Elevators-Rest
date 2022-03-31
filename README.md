@@ -11,7 +11,7 @@
 
 ## Project Description
 
-Rocket Elevators Information System is comprised of two types of application programming interfaces (API), including: (1) Microsoft .NET 6 representational state transfer (RESTful) API and GraphQL query-oriented API. This application repository is concerning the .NET 6 RESTful API, which permits clients to submit a GET and PUT HTTP request using the JavaScript Object Notation format. The remmaing types of HTTP requests (i.e. DELETE and POST) are prohibited within the context of this application. Requests can be made to the following URL address: [http://thisisrocketelevators.azurewebsites.net/api](http://thisisrocketelevators.azurewebsites.net/api)
+Rocket Elevators Information System is comprised of two types of application programming interfaces (API), including: (1) Microsoft .NET 6 representational state transfer (RESTful) API and GraphQL query-oriented API. This application repository is concerning the .NET 6 RESTful API, which permits clients to submit a GET and PUT HTTP request using the JavaScript Object Notation format. The remmaing types of HTTP requests (i.e. DELETE and POST) are prohibited within the context of this application. Requests can be made to the following URL address: [http://thisisrocketelevators.azurewebsites.net/api](http://thisisrocketelevators.azurewebsites.net/api). Examples of requests as Postman collection can be accessed via this [link](https://www.getpostman.com/collections/1b0bdc09588fa3e30fbd).
 
 ## Application Requirements
 
@@ -25,10 +25,10 @@ Rocket Elevators Information System is comprised of two types of application pro
 -   **/battery/id**
 
     -   Description: Retrieve current status of specific Battery by ID
-    -   Example: (Building ID: 3)
+    -   Example: (Battery ID: 3)
 
         ```
-        curl --location --request GET 'http://thisisrocketelevators.azurewebsites.net/api/building/3'
+        curl --location --request GET 'http://thisisrocketelevators.azurewebsites.net/api/battery/3'
         ```
 
 -   **/column/id**
@@ -68,7 +68,7 @@ Rocket Elevators Information System is comprised of two types of application pro
     -   Description: Change current status of specific Battery by ID
     -   Example: Changing Building (ID: 10) status to "valid"
         ```
-        curl --location --request PUT 'http://thisisrocketelevators.azurewebsites.net/api/building/10' \
+        curl --location --request PUT 'http://thisisrocketelevators.azurewebsites.net/api/battery/10' \
             --header 'Content-Type: application/json' \
             --data-raw '{
                             "id": 10,
