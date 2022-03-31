@@ -25,12 +25,10 @@ namespace RocketElevatorREST.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ElevatorDto>>> GetElevators()
         {
-            // var elevators = await _context.Elevators.ToListAsync();
             var elevators = await _context.Elevators
                             .Select(elevator => ElevatorToDTO(elevator))
                             .ToListAsync();
             return elevators;
-
         }
 
         // GET: api/elevator/invalid

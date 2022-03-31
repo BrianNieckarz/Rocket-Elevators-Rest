@@ -7,10 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 // NOTE: Connect to external MySql server
-var myconnection = "Server=codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com;Database=feliciaHartono;UserId=codeboxx;Password=Codeboxx1!";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 28));
 builder.Services.AddDbContext<feliciaHartonoContext>(opt => 
-    opt.UseMySql(myconnection, serverVersion)
+    opt.UseMySql(builder.Configuration.GetConnectionString("foobarDB"), serverVersion)
         .LogTo(Console.WriteLine)
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors());

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Ironlithium/Desktop/RocketElevatorREST/RocketElevatorREST.csproj": {}
+    "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj": {}
   },
   "projects": {
-    "/Users/Ironlithium/Desktop/RocketElevatorREST/RocketElevatorREST.csproj": {
+    "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Ironlithium/Desktop/RocketElevatorREST/RocketElevatorREST.csproj",
+        "projectUniqueName": "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj",
         "projectName": "RocketElevatorREST",
-        "projectPath": "/Users/Ironlithium/Desktop/RocketElevatorREST/RocketElevatorREST.csproj",
+        "projectPath": "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/RocketElevatorREST.csproj",
         "packagesPath": "/Users/Ironlithium/.nuget/packages/",
-        "outputPath": "/Users/Ironlithium/Desktop/RocketElevatorREST/obj/",
+        "outputPath": "/Users/Ironlithium/Desktop/Rocket_Elevators_Rest_2603/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Ironlithium/.nuget/NuGet/NuGet.Config"
