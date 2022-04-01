@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Configuration;
 using RocketElevatorREST.Models;
 
 namespace RocketElevatorREST.Controllers
@@ -29,6 +30,7 @@ namespace RocketElevatorREST.Controllers
             return await _context.Buildings.ToListAsync();
         }
         
+        // GET: api/Building/intervention
         [HttpGet("intervention")]
         public async Task<ActionResult<IEnumerable<Building>>>  GetBuildingsWithIntervention(){
             var building = await _context.Buildings
