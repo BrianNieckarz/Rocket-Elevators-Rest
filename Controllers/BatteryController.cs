@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RocketElevatorREST.Models;
+using RocketElevatorsRestApi.Models;
 
-namespace RocketElevatorREST.Controllers
+namespace RocketElevatorsRestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

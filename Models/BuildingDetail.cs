@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RocketElevatorREST.Models
+namespace RocketElevatorsRestApi.Models
 {
     public partial class BuildingDetail
     {

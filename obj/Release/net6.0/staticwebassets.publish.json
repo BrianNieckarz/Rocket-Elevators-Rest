@@ -1,11 +1,11 @@
 {
-  "Version": 1,
-  "Hash": "OjeavbyNESSDfYbq0yr50XhasIIEnzSnpRD/DCsV0rU=",
-  "Source": "RocketElevatorREST",
-  "BasePath": "_content/RocketElevatorREST",
-  "Mode": "Default",
-  "ManifestType": "Publish",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+    "Version": 1,
+    "Hash": "OjeavbyNESSDfYbq0yr50XhasIIEnzSnpRD/DCsV0rU=",
+    "Source": "RocketElevatorsRestApi",
+    "BasePath": "_content/RocketElevatorsRestApi",
+    "Mode": "Default",
+    "ManifestType": "Publish",
+    "ReferencedProjectsConfiguration": [],
+    "DiscoveryPatterns": [],
+    "Assets": []
 }

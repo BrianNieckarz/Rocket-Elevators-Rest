@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RocketElevatorREST.Models {    
+namespace RocketElevatorsRestApi.Models {    
     public partial class Elevator {
         public long Id { get; set; }
         

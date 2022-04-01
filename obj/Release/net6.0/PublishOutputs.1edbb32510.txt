@@ -1,9 +1,9 @@
-/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorREST
+/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorsRestApi
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/appsettings.Development.json
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/appsettings.json
-/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorREST.dll
-/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorREST.runtimeconfig.json
-/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorREST.pdb
+/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorsRestApi.dll
+/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorsRestApi.runtimeconfig.json
+/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorsRestApi.pdb
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/Humanizer.dll
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/MessagePack.dll
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/MessagePack.Annotations.dll
@@ -246,4 +246,4 @@
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
-/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorREST.deps.json
+/Users/Ironlithium/Desktop/CodeBoxx/week7RestAPI/Rocket_Elevators_Rest_2603/bin/Release/net6.0/publish/RocketElevatorsRestApi.deps.json

@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Configuration;
-using RocketElevatorREST.Models;
+using RocketElevatorsRestApi.Models;
 
-namespace RocketElevatorREST.Controllers
+namespace RocketElevatorsRestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

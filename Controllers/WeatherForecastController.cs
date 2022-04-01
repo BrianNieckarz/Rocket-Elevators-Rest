@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace RocketElevatorREST.Controllers;
+namespace RocketElevatorsRestApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]

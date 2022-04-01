@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RocketElevatorREST.Models
+namespace RocketElevatorsRestApi.Models
 {
     public partial class Column
     {

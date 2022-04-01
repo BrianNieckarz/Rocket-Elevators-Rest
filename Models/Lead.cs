@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace RocketElevatorREST.Models
+namespace RocketElevatorsRestApi.Models
 {
     public partial class Lead
     {

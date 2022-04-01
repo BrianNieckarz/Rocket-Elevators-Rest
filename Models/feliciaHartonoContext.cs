@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace RocketElevatorREST.Models
+namespace RocketElevatorsRestApi.Models
 {
     public partial class feliciaHartonoContext : DbContext
     {

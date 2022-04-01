@@ -1,4 +1,4 @@
-namespace RocketElevatorREST;
+namespace RocketElevatorsRestApi;
 
 public class WeatherForecast
 {

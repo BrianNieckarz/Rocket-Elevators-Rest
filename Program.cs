@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql;
 using Microsoft.Extensions.Configuration;
-using RocketElevatorREST.Models;
+using RocketElevatorsRestApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
