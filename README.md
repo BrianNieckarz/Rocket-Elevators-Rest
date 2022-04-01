@@ -11,7 +11,7 @@
 
 ## Project Description
 
-Rocket Elevators Information System is comprised of two types of application programming interfaces (API), including: (1) Microsoft .NET 6 representational state transfer (RESTful) API and GraphQL query-oriented API. This application repository is concerning the .NET 6 RESTful API, which permits clients to submit a GET and PUT HTTP request using the JavaScript Object Notation format. The remmaing types of HTTP requests (i.e. DELETE and POST) are prohibited within the context of this application. Requests can be made to the following URL address: [http://thisisrocketelevators.azurewebsites.net/api](http://thisisrocketelevators.azurewebsites.net/api). Examples of requests as Postman collection can be accessed via this [link](https://www.getpostman.com/collections/1b0bdc09588fa3e30fbd).
+Rocket Elevators Information System is comprised of two types of application programming interfaces (API), including: (1) Microsoft .NET 6 representational state transfer (RESTful) API and GraphQL query-oriented API. This application repository is concerning the .NET 6 RESTful API, which permits clients to submit a GET and PUT HTTP request using the JavaScript Object Notation format. The remaining types of HTTP requests (i.e. DELETE and POST) are prohibited within the context of this application. Requests can be made to the following URL address: [http://thisisrocketelevators.azurewebsites.net/api](http://thisisrocketelevators.azurewebsites.net/api). Examples of requests as Postman collection can be accessed via this [link](https://www.getpostman.com/collections/1b0bdc09588fa3e30fbd).
 
 ## Application Requirements
 
