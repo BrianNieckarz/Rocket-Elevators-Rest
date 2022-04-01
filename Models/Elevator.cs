@@ -31,7 +31,7 @@ namespace RocketElevatorREST.Models {
         public DateTime UpdatedAt { get; set; }
         [JsonIgnore]
         public string? Typing { get; set; }
-
+        [JsonIgnore]
         [ForeignKey("ColumnId")]
         public virtual Column? Column { get; set; }
     }
